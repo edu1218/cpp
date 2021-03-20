@@ -1,18 +1,19 @@
 {
     "configurations": [
         {
-            // 配置的名稱，可以新增多個在編輯器右下角切換
-            "name": "MinGW",
-            "intelliSenseMode": "gcc-x64",
-            // 這裡的編譯器路徑，包括下面的一些選項都只是
-            // 給 IntelliSense 用的，和具體專案構建沒關係
-            "compilerPath": "D:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gcc.exe",
+            "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "defines": [],
-            "cStandard": "c11",
-            "cppStandard": "c++17"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe",
+            "cStandard": "c89",
+            "cppStandard": "gnu++98",
+            "intelliSenseMode": "windows-gcc-x86"
         }
     ],
     "version": 4
