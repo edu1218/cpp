@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 // Global variable
@@ -16,9 +17,8 @@ int main()
     return 0;
 }
 /*
-Return by Reference(address)
-num:reference
-return type:int&
+"Return" by Reference
+test()是num的reference(別名)
 */
 //正確
 int& test()
