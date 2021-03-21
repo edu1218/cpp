@@ -4,6 +4,7 @@ using namespace std;
 void staticTest()
 {
     // var is a static variable
+    //REVIEW : 靜態變量不會消失
     static int var = 0;
     ++var;
 

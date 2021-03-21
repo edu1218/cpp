@@ -21,6 +21,7 @@ int main()
 test()是num的reference(別名)
 */
 //正確
+//REVIEW : 函數作為reference
 int& test()
 {
     return num;

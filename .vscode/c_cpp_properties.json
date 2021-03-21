@@ -1,19 +1,25 @@
 {
     "configurations": [
+
         {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
+            "name": "GCC",
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe",
-            "cStandard": "c89",
-            "cppStandard": "gnu++98",
-            "intelliSenseMode": "windows-gcc-x86"
+            "windowsSdkVersion": "10.0.18362.0",
+            "compilerPath": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    // "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64",
+                    // "D:\\Program Files\\LLVM"
+                ]
+            }
         }
     ],
     "version": 4
