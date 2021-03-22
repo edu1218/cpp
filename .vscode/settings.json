@@ -1,5 +1,6 @@
 {
       "files.associations": {
+            "*.html": "html",
             "*.cshtml": "html",
             "*.cpp": "cpp",
             "string": "cpp",
@@ -9,46 +10,38 @@
             "iosfwd": "cpp",
             "*.tcc": "cpp",
             "fstream": "cpp",
+            "initializer_list": "cpp",
+            "array": "cpp",
+            "atomic": "cpp",
+            "cctype": "cpp",
+            "clocale": "cpp",
+            "cmath": "cpp",
+            "cstdarg": "cpp",
+            "cstddef": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cwchar": "cpp",
+            "cwctype": "cpp",
+            "deque": "cpp",
+            "unordered_map": "cpp",
             "vector": "cpp",
-            "typeinfo": "cpp"
-      },
-      "[cpp]": {
-            "editor.formatOnType": true,
-            "editor.formatOnSave": true,
-            "editor.renderIndentGuides": true,
-            "editor.insertSpaces": true,
-            "editor.detectIndentation": true,
-            "editor.tabSize": 4
-      },
-      "[c]": {
-            "editor.formatOnType": true,
-            "editor.formatOnSave": true,
-            "editor.renderIndentGuides": true,
-            "editor.insertSpaces": true,
-            "editor.detectIndentation": true,
-            "editor.tabSize": 4
-
-      },
-      "clang.executable": "D:\\Program Files\\LLVM\\bin\\clang.exe",
-      "clang.cxxflags": [
-            "-std=c++17", // <-c++程式改這裡
-            // "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\lib\\gcc\\x86_64-w64-mingw32",
-            "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\x86_64-w64-mingw32\\include",
-            "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
-            "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++",
-            "-I${workspaceRoot}\\include",
-            "-I${cwd}"
-      ],
-      // "clang.cflags": [
-      //       "-std=c17", // <-c程式改這裡
-      //       "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\include",
-      //       "-ID:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\x86_64-w64-mingw32\\include",
-      //       "-I${workspaceRoot}\\include",
-      //       "-I${cwd}"
-      // ],
-    "code-runner.runInTerminal": true,//建議如果要輸入內容就設成true在終端機中執行,如果沒有要輸入內容就設成false在輸出欄中執行
-      "code-runner.executorMap": {
-            "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -std=c17 && $dir$fileNameWithoutExt", // <-c程式改這裡
-            "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++17 && $dir$fileNameWithoutExt", // <-c++程式改這裡
+            "exception": "cpp",
+            "algorithm": "cpp",
+            "memory": "cpp",
+            "memory_resource": "cpp",
+            "optional": "cpp",
+            "string_view": "cpp",
+            "system_error": "cpp",
+            "tuple": "cpp",
+            "type_traits": "cpp",
+            "utility": "cpp",
+            "limits": "cpp",
+            "new": "cpp",
+            "sstream": "cpp",
+            "stdexcept": "cpp",
+            "streambuf": "cpp",
+            "typeinfo": "cpp",
+            "iterator": "cpp"
       }
 }
