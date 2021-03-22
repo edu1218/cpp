@@ -10,7 +10,9 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"${workspaceFolder}\\include",
 			],
 			"options": {
 				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
@@ -31,7 +33,8 @@
 				"${fileDirname}/*.cpp",
 				"-o",
 				// "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
-				"${workspaceFolder}\\build\\main.exe"
+				"${workspaceFolder}\\build\\main.exe",
+
 
 			],
 			"options": {

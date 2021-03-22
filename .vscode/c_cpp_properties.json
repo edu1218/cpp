@@ -1,6 +1,5 @@
 {
     "configurations": [
-
         {
             "name": "GCC",
             "defines": [
@@ -13,11 +12,17 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64",
+            //用於intellisense非構建的include header 路徑
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}\\include",
+                "${workspaceFolder}\\include\\plog"
+            ],
             "browse": {
                 "path": [
                     "${workspaceFolder}",
-                    // "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64",
-                    // "D:\\Program Files\\LLVM"
+                    "${workspaceFolder}\\include",
+                    "${workspaceFolder}\\include\\plog"
                 ]
             }
         }
