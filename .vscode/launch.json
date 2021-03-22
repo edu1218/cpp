@@ -26,7 +26,7 @@
               }
           ],
           // 除錯前先執行 C/C++: g++.exe build active file（定義在上面的 tasks.json 裡）
-          "preLaunchTask": "builds"
+          "preLaunchTask": "build"
       }
   ]
 }
