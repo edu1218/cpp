@@ -2,9 +2,8 @@
 using namespace std;
 
 int main() {
-      //REVIEW : constexpr是
-    constexpr int LENGTH = 10;
     
+    constexpr int LENGTH = 10;
     int arr[LENGTH] = {0};
     int *p = arr;
 
