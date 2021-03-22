@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "build",
+			"label": "build_cpp_to_exefile",
 			"command": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-g",
@@ -24,7 +24,42 @@
 				"$gcc",
 			],
 			"group": "build",
-			// "detail": "編譯器: D:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "compile_cpp_to_objectfile",
+			"command": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-c",
+				"-o",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.o",
+				"${file}",
+				"ar -rcs libsum.a sum.o"
+			],
+			"options": {
+				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc",
+			],
+			"group": "build",
+		},
+		{
+			"type": "cppbuild",
+			"label": "compile_objectfile_to_staticlib",
+			"command": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\ar.exe",
+			"args": [
+				"-rcs",
+				"${workspaceFolder}\\build\\lib${fileBasenameNoExtension}.a",
+				"${file}",
+			],
+			"options": {
+				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc",
+			],
+			"group": "build",
 		},
 
 	]
