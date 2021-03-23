@@ -5,7 +5,7 @@
 一個就是每次都要重新編譯 sum.c 的內容，比較量費時間，
 另外就是未來若要持續維護 sum.c 的內容時，就需要同時修改好多個副本，既容易出錯也很麻煩。
 
-主角sum.c
-情境:要給別人用sum功能但是不想給看原始碼=>靜態函式庫static library
-2.共享函式庫shared library
+主角sum.c:實作功能的檔案
+情境:要給別人用sum功能但是不想給看原始碼=>靜態函式庫static library,必須跟主程式一起編譯成執行檔
+情境:執行檔跟函式庫是分開編譯的=>共享函式庫shared library
 3.動態載入函式庫dynamically loaded library
