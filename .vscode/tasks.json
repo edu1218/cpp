@@ -3,7 +3,29 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "build_cpp_to_exefile",
+			"label": "build",
+			"command": "g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-I",
+				"${fileDirname}\\"
+			],
+			"options": {
+				//命令列的目前位置會先跑到這
+				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},{
+			"type": "cppbuild",
+			"label": "build_all_to_exefile",
 			"command": "g++.exe",
 			"args": [
 				"-g",
@@ -23,52 +45,7 @@
 				"$gcc"
 			],
 			"group": "build"
-		},
-		{
-			"type": "cppbuild",
-			"label": "compile_cpp_to_objectfile",
-			"command": "g++.exe",
-			"args": [
-				"-c",
-				"-o",
-				"${workspaceFolder}\\build\\${fileBasenameNoExtension}.o",
-				"${file}"
-			],
-			"options": {
-				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		},
-		{
-			"type": "cppbuild",
-			"label": "compile_objectfile_to_staticlib",
-			"command": "ar.exe",
-			"args": [
-				"-rcs",
-				"${workspaceFolder}\\build\\lib${fileBasenameNoExtension}.a",
-				"${file}"
-			],
-			"options": {
-				"cwd": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build"
-		},
-		{
-			"type": "shell",
-			"label": "compile_cpp_to_staticlib",
-			"dependsOn": [
-				"compile_cpp_to_objectfile",
-				"compile_objectfile_to_staticlib"
-			],
-			"problemMatcher": [
-				"$gcc"
-			]
 		}
+
 	]
 }

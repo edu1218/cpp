@@ -1,6 +1,0 @@
-!<arch>
-sum.cpp/        1616452263  0     0     100666  70        `
-#include "sum.h"
-double sum(double a, double b) {
-  return a + b;
-}
